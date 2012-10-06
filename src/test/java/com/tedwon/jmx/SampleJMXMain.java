@@ -7,10 +7,12 @@ import java.lang.management.ManagementFactory;
 /**
  * Sample JMX App Class.
  *
+ * -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
+ *
  * @author <a href=mailto:iamtedwon@gmail.com">Ted Won</a>
  * @version 0.1
  */
-public class SampleJMXApp {
+public class SampleJMXMain {
 
     public static void main(String[] args) throws Exception {
 

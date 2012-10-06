@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.tedwon.jmx</groupId>
-    <artifactId>jmx-debug-app</artifactId>
+    <artifactId>jmx-debugger</artifactId>
     <packaging>jar</packaging>
     <version>0.1-SNAPSHOT</version>
     <name>JMX MBean Debug Utility Application</name>
@@ -37,11 +37,32 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>fully.qualified.MainClass</mainClass>
+                            <mainClass>com.tedwon.jmx.JMXDebugger</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>exec-maven-plugin</artifactId>-->
+                <!--<version>1.2.1</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>test-run</id>-->
+                        <!--<phase>test</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>java</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<classpathScope>test</classpathScope>-->
+                            <!--<mainClass>com.tedwon.jmx.SampleJMXMain</mainClass>-->
+                            <!--<commandlineArgs>-->
+                                <!--<commandlineArg>com.sun.management.jmxremote.port=9999</commandlineArg>-->
+                            <!--</commandlineArgs>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 
