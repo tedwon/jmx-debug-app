@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.tedwon.jmx</groupId>
-    <artifactId>jmx-debugger</artifactId>
+    <artifactId>jmx-debugger-app</artifactId>
     <packaging>jar</packaging>
     <version>0.1-SNAPSHOT</version>
     <name>JMX MBean Debug Utility Application</name>
